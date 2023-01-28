@@ -1,8 +1,8 @@
-import { FC } from "react";
-import { Route, Routes } from "react-router-dom";
+import { FC } from 'react';
+import { Route, Routes } from 'react-router-dom';
 
-import App from "../../App";
-import routes from "../../config/routes";
+import App from '../../App';
+import routes from '../../config/routes';
 
 const Routing: FC = () => (
   <Routes>

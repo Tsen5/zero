@@ -2,11 +2,11 @@ import {
   TypedUseSelectorHook,
   useDispatch as useReduxDispatch,
   useSelector as useReduxSelector
-} from "react-redux";
+} from 'react-redux';
 
-import { AnyAction, configureStore, ThunkAction } from "@reduxjs/toolkit";
+import { AnyAction, configureStore, ThunkAction } from '@reduxjs/toolkit';
 
-import globalReducer from "./slices/global";
+import globalReducer from './slices/global';
 
 export const store = configureStore({
   reducer: {
