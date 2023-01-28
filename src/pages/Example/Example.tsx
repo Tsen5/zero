@@ -1,11 +1,14 @@
-import { FC } from "react";
+import { FC } from 'react';
+import { useTranslation } from 'react-i18next';
 
-import useTitle from "../../hooks/useTitle";
+import useTitle from '../../hooks/useTitle';
 
 const Example: FC = () => {
-  useTitle('Example');
+  const { t } = useTranslation('example');
 
-  return <>Example page</>;
+  useTitle(t('documentTitle'));
+
+  return <>{t('text.example')}</>;
 };
 
 export default Example;
