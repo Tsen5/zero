@@ -1,4 +1,7 @@
-import { DEFAULT_TRANSITION_DURATION, DEFAULT_TRANSITION_TIMING } from './constant';
+import {
+  DEFAULT_TRANSITION_DURATION,
+  DEFAULT_TRANSITION_TIMING
+} from "./constant";
 
 export default {
   create: (

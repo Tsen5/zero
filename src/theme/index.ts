@@ -1,7 +1,7 @@
-import colors from './colors';
-import palette from './palette';
-import sizing from './sizing';
-import transition from './transition';
+import colors from "./colors";
+import palette from "./palette";
+import sizing from "./sizing";
+import transition from "./transition";
 
 const theme = {
   colors,

@@ -1,10 +1,9 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
+import i18n from "i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
+import { initReactI18next } from "react-i18next";
+import { Locale } from "src/types/localization";
 
-import { Locale } from 'src/types/localization';
-
-import fr from './fr';
+import fr from "./fr";
 
 export const defaultNS: keyof typeof fr = 'global';
 export const resources = {
