@@ -6,8 +6,11 @@ import {
 export default {
   create: (
     duration: number = DEFAULT_TRANSITION_DURATION,
-    property: string = 'all',
+    properties: string[] = [],
     timing: string = 'linear',
     delay: number = DEFAULT_TRANSITION_TIMING
-  ) => `${property} ${duration}ms ${timing} ${delay}ms`,
+  ) =>
+    properties.length === 0
+      ? `all ${duration}ms ${timing} ${delay}ms`
+      : properties.map((property) => `${property} ${duration}ms ${timing} ${delay}ms`).join(', '),
 };
